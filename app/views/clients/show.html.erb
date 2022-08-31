@@ -1,0 +1,280 @@
+<%= link_to 'Back', clients_path, class: 'btn btn-light mb-3' %>
+<div class="card" >
+  <div class="card-body">
+    <h2 class='card-title d-flex justify-content-between'>
+      <span> <b> <%= @client.name %> </b> </span>  
+      <div> 
+        <%= link_to 'Edit', edit_client_path(@client), class: 'btn btn-light' %>
+        <%= link_to 'Destroy', @client, method: :delete, class: 'btn btn-secondary text-light', data: { confirm: 'Are you sure?' } %>
+      </div>
+    </h2>
+    <div class="mb-4">
+
+      
+      <table>
+        
+        <tr>
+          <td>
+            Gender:
+          </dt>
+          <td>
+            <%= @client.genre %>
+          </td>
+        </tr>
+        
+      
+        <tr>
+        <td>
+          <strong>Name:</strong>
+        </td>
+        <td>
+          <%= @client.name %>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Email:</strong>
+        </td>
+        <td>
+          <%= @client.email %>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Phone number:</strong>
+        </td>
+        <td>
+          <%= @client.telephone %>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Gender:</strong>
+        </td>
+        <td>
+          <%= @client.genre %>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Back:</strong>
+        </td>
+        <td>
+          <%= @client.dos %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Shoulder:</strong>
+        </td>
+        <td>
+          <%= @client.epaule %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Chest:</strong>
+        </td>
+        <td>
+          <%= @client.poitrine %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Sleeve length:</strong>
+        </td>
+        <td>
+          <%= @client.long_manche %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Round of the sleeve:</strong>
+        </td>
+        <td>
+          <%= @client.tour_manche %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Waist length:</strong>
+        </td>
+        <td>
+          <%= @client.long_taille %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Waist circumference:</strong>
+        </td>
+        <td>
+          <%= @client.tour_taille %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Pliers:</strong>
+        </td>
+        <td>
+          <%= @client.pinces %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Camisole length:</strong>
+        </td>
+        <td>
+          <%= @client.long_camisole %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Shirt length:</strong>
+        </td>
+        <td>
+          <%= @client.long_chemise %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Wrist:</strong>
+        </td>
+        <td>
+          <%= @client.poignet %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Arm circumference:</strong>
+        </td>
+        <td>
+          <%= @client.tour_bras %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Dress length:</strong>
+        </td>
+        <td>
+          <%= @client.long_robe %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Belly:</strong>
+        </td>
+        <td>
+          <%= @client.ventre %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Neck circumference:</strong>
+        </td>
+        <td>
+          <%= @client.tour_cou %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Strike:</strong>
+        </td>
+        <td>
+          <%= @client.frappe %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Belt:</strong>
+        </td>
+        <td>
+          <%= @client.ceinture %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Basin:</strong>
+        </td>
+        <td>
+          <%= @client.bassin %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Knees:</strong>
+        </td>
+        <td>
+          <%= @client.genoux %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Thigh:</strong>
+        </td>
+        <td>
+          <%= @client.cuisse %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>skirt length:</strong>
+        </td>
+        <td>
+          <%= @client.long_jupe %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Pant length:</strong>
+        </td>
+        <td>
+          <%= @client.long_pantalon %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Bottom:</strong>
+        </td>
+        <td>
+          <%= @client.bas %>cm
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+          <strong>Image:</strong>
+        </td> 
+        <td>
+          <%= image_tag @client.image.url, class:'other_image' %>
+        </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
